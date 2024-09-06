@@ -138,7 +138,30 @@
     <string name="ways_take_medicine">약 복용 방법</string>
     <string name="now">바로</string>
     <string name="complete_write_report">리포트 작성 완료하기</string>
-
+    <string name="prefer_working_location">희망 근무 지역 선택해주세요</string>
+    <string name="seoul">서울특별시</string>
+    <string name="select_administrative_district">시/도 선택</string>
+    <string name="select_city">시/군/구 선택</string>
+    <string name="gangseogu">강서구</string>
+    <string-array name="administrative_district_option">
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>대구광역시</item>
+        <item>인천광역시</item>
+        <item>광주광역시</item>
+        <item>대전광역시</item>
+        <item>울산광역시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>제주특별자치도</item>
+        <item>세종특별자치도</item>
+    </string-array>
     <string-array name="reservation_cancel_reason_option">
         <item>고객변심</item>
         <item>재예약</item>
