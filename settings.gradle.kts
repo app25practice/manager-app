@@ -7,11 +7,8 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        gradlePluginPortal()
         mavenCentral()
-
-        maven("https://devrepo.kakao.com/nexus/repository/kakaomap-releases/")
-        maven("https://devrepo.kakao.com/nexus/content/groups/public/")
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -19,6 +16,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        maven("https://devrepo.kakao.com/nexus/repository/kakaomap-releases/")
+        maven("https://devrepo.kakao.com/nexus/content/groups/public/")
     }
 }
 
