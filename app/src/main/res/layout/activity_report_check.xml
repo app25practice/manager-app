@@ -140,8 +140,8 @@
             android:textSize="20sp" />
 
     </RadioGroup>
-    <RadioGroup
-        android:id="@+id/select_meals_take_medicine_radio_group"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/select_meals_take_medicine_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -189,7 +189,7 @@
             android:textAlignment="center"
             android:textSize="20sp" />
 
-    </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
