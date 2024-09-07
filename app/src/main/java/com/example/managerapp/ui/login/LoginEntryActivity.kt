@@ -3,7 +3,6 @@ package com.example.managerapp.ui.login
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.managerapp.R
 import com.example.managerapp.databinding.ActivityLoginEntryBinding
 import com.example.managerapp.ui.main.MainActivity
 import com.example.managerapp.ui.register.RegisterEntryActivity
@@ -16,11 +15,11 @@ class LoginEntryActivity : AppCompatActivity() {
         binding = ActivityLoginEntryBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        navigateToRegister()
+        navigateToRegisterEntry()
         navigatoToMain()
     }
 
-    private fun navigateToRegister() {
+    private fun navigateToRegisterEntry() {
         binding.loginBtn.setOnClickListener {
             val intent = Intent(this, RegisterEntryActivity::class.java)
             startActivity(intent)

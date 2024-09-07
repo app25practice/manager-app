@@ -139,6 +139,15 @@
     <string name="manage">관리하기</string>
     <string name="not_companion">현재 동행 중이 아닙니다.</string>
     <string name="no_reservation">예약 내역이 없습니다.</string>
+    <string name="register_manager_02">매니저 등록하기</string>
+    <string name="apply_register">등록 신청하기</string>
+    <string name="upload_profile">프로필 이미지 업로드</string>
+    <string name="work_history">경력</string>
+    <string name="work_history_example">예)\n2020 ~ 2023 OO병원 근무\n2017 ~ 2019 XX병원 근무</string>
+    <string name="short_introduction">한마디 자기소개</string>
+    <string name="introduction_example">예)\n친부모님처럼 따뜻하게 모시겠습니다.</string>
+    <string name="certification">자격증</string>
+    <string name="go_certification">자격증명서 인증하기</string>
 
     <string-array name="reservation_cancel_reason_option">
         <item>고객변심</item>
