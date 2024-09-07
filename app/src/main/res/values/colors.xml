@@ -23,4 +23,6 @@
     <color name="gray_04">#868686</color>
     <color name="divider">#E1DCDC</color>
     <color name="red">#FF0000</color>
+    <color name="blue_03">#d0e4fc</color>
+    <color name="purple_02">#ebe7f9</color>
 </resources>

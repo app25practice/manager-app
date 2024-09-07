@@ -65,6 +65,7 @@
     <string name="choose_date">이용일자를 선택해주세요</string>
     <string name="choose_time">매니저 만남 시간을 선택해주세요</string>
     <string name="same_day_reservation">당일 예약은 불가합니다</string>
+
     <string-array name="relation_option">
         <item>본인</item>
         <item>자식</item>
@@ -124,7 +125,10 @@
     <string name="introduction_detail">친부모님처럼 따듯하게 모시겠습니다 ^^</string>
     <string name="busan_namgu">부산광역시 남구</string>
     <string name="_00_00_00_00">00:00 ~ 00:00</string>
-    <string name="Thrusday">목</string>
+    <string name="sunday">일</string>
+    <string name="saturday">토</string>
+    <string name="friday">금</string>
+    <string name="thrusday">목</string>
     <string name="wednesday">수</string>
     <string name="tuesday">화</string>
     <string name="monday">월</string>
@@ -132,6 +136,43 @@
     <string name="_50000">50000</string>
     <string name="basic_fee">기본 이용료</string>
     <string name="app_name_manager">매니저 앱</string>
+    <string name="summarize_doctor_comment">의사소견 요약</string>
+    <string name="report_check">리포트 확인</string>
+    <string name="hint_report">진료 내용을 상세히 작성해주세요</string>
+    <string name="ways_take_medicine">약 복용 방법</string>
+    <string name="now">바로</string>
+    <string name="complete_write_report">리포트 작성 완료하기</string>
+    <string name="prefer_working_location">희망 근무 지역 선택해주세요</string>
+    <string name="seoul">서울특별시</string>
+    <string name="select_administrative_district">시/도 선택</string>
+    <string name="select_city">시/군/구 선택</string>
+    <string name="gangseogu">강서구</string>
+    <string name="edit">수정하기</string>
+    <string name="edit_work_time">예약 신청 받을 시간대를 선택해주세요</string>
+    <string name="select_day">요일 선택</string>
+    <string name="select_active_time">활동 시간 선택 </string>
+    <string name="_08_00">08:00</string>
+    <string name="_20_00">20:00</string>
+    <string name="set_work_time_location">근무 지역/시간대 설정하기</string>
+    <string-array name="administrative_district_option">
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>대구광역시</item>
+        <item>인천광역시</item>
+        <item>광주광역시</item>
+        <item>대전광역시</item>
+        <item>울산광역시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>제주특별자치도</item>
+        <item>세종특별자치도</item>
+    </string-array>
     <string name="register_manager">매니저로 등록하기</string>
     <string name="hello">반갑습니다</string>
     <string name="kim_jisu">김지수</string>
@@ -148,12 +189,63 @@
     <string name="introduction_example">예)\n친부모님처럼 따뜻하게 모시겠습니다.</string>
     <string name="certification">자격증</string>
     <string name="go_certification">자격증명서 인증하기</string>
-
     <string-array name="reservation_cancel_reason_option">
         <item>고객변심</item>
         <item>재예약</item>
         <item>원하는 매니저 없음</item>
         <item>기타</item>
+    </string-array>
+    <string-array name="time">
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+        <item>24:30</item>
     </string-array>
 
 </resources>
