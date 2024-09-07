@@ -25,6 +25,9 @@
             android:name=".ui.ReportCheckActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.register.RegisterEntryActivity"
             android:exported="false" />
         <activity
