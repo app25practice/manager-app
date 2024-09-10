@@ -52,7 +52,7 @@
     <string name="introduction">한마디</string>
     <string name="active_location">활동 지역</string>
     <string name="active_time">활동 시간</string>
-    <string name="career_infor">경력 사항</string>
+    <string name="career_infor">경력</string>
     <string name="reserve">예약 하기</string>
     <string name="input_departures">출발지를 입력해주세요</string>
     <string name="road_address">도로명 주소</string>
@@ -138,7 +138,7 @@
     <string name="app_name_manager">매니저 앱</string>
     <string name="summarize_doctor_comment">의사소견 요약</string>
     <string name="report_check">리포트 확인</string>
-    <string name="hint_report">진료 내용을 상세히 작성해주세요</string>
+    <string name="hint_report">진료 내용을 상세히 작성해주세요\n(50자 이내)</string>
     <string name="ways_take_medicine">약 복용 방법</string>
     <string name="now">바로</string>
     <string name="complete_write_report">리포트 작성 완료하기</string>
@@ -189,6 +189,18 @@
     <string name="introduction_example">예)\n친부모님처럼 따뜻하게 모시겠습니다.</string>
     <string name="certification">자격증</string>
     <string name="go_certification">자격증명서 인증하기</string>
+    <string name="introduction_text">친부모님처럼 따뜻하게 모시겠습니다^^</string>
+    <string name="nothing">없음</string>
+    <string name="career_example">2012~2020 부산대학병원</string>
+    <string name="from_02">부터</string>
+    <string name="to_02">까지</string>
+    <string name="before_sleep">취침전</string>
+    <string name="everyday">매일</string>
+    <string name="times">회</string>
+    <string name="_1">1</string>
+    <string name="_0">0</string>
+    <string name="_00_00">00:00</string>
+    <string name="wave">~</string>
     <string-array name="reservation_cancel_reason_option">
         <item>고객변심</item>
         <item>재예약</item>

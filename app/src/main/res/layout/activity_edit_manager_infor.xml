@@ -22,28 +22,65 @@
         android:layout_marginTop="24dp"
         android:text="@string/manager_info"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/manager_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_edit_btn"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/manager_info_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/manager_info_text_view">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/profile_imge_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/woman" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/white_circle_image_view"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/shadow_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/pencil"
+            app:layout_constraintBottom_toBottomOf="@id/white_circle_image_view"
+            app:layout_constraintEnd_toEndOf="@id/white_circle_image_view"
+            app:layout_constraintStart_toStartOf="@id/white_circle_image_view"
+            app:layout_constraintTop_toTopOf="@id/white_circle_image_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textSize="16sp"
+        android:text="@string/kim_jisu"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/manager_img" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_btn" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,20 +88,18 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name"
-        app:layout_constraintBottom_toTopOf="@id/next_btn">
+        app:layout_constraintTop_toBottomOf="@id/name_text_view">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/manager_infor_layout"
-            android:background="@drawable/manager_infor_box_background"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
+            android:layout_height="wrap_content"
+            android:background="@drawable/manager_infor_box_background"
+            android:paddingBottom="20dp">
 
             <TextView
                 android:id="@+id/active_location_parent"
@@ -76,7 +111,7 @@
                 android:textSize="18sp"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/active_location_child"
@@ -85,8 +120,8 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/busan_namgu"
                 android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/active_location_parent"
-                app:layout_constraintTop_toBottomOf="@+id/active_location_parent" />
+                app:layout_constraintStart_toStartOf="@id/active_location_parent"
+                app:layout_constraintTop_toBottomOf="@id/active_location_parent" />
 
             <TextView
                 android:id="@+id/active_time_parent"
@@ -96,8 +131,8 @@
                 android:textSize="18sp"
 
 
-                app:layout_constraintStart_toStartOf="@+id/active_location_child"
-                app:layout_constraintTop_toBottomOf="@+id/active_location_child" />
+                app:layout_constraintStart_toStartOf="@id/active_location_child"
+                app:layout_constraintTop_toBottomOf="@id/active_location_child" />
 
             <LinearLayout
                 android:id="@+id/monday_layout"
@@ -105,8 +140,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:visibility="visible"
-                app:layout_constraintStart_toStartOf="@+id/active_time_parent"
-                app:layout_constraintTop_toBottomOf="@+id/active_time_parent">
+                app:layout_constraintStart_toStartOf="@id/active_time_parent"
+                app:layout_constraintTop_toBottomOf="@id/active_time_parent">
 
                 <TextView
                     android:layout_width="35dp"
@@ -131,8 +166,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:visibility="visible"
-                app:layout_constraintStart_toStartOf="@+id/monday_layout"
-                app:layout_constraintTop_toBottomOf="@+id/monday_layout">
+                app:layout_constraintStart_toStartOf="@id/monday_layout"
+                app:layout_constraintTop_toBottomOf="@id/monday_layout">
 
                 <TextView
                     android:id="@+id/monday"
@@ -159,8 +194,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:visibility="visible"
-                app:layout_constraintStart_toStartOf="@+id/tuesday_layout"
-                app:layout_constraintTop_toBottomOf="@+id/tuesday_layout">
+                app:layout_constraintStart_toStartOf="@id/tuesday_layout"
+                app:layout_constraintTop_toBottomOf="@id/tuesday_layout">
 
                 <TextView
                     android:id="@+id/wednesday"
@@ -185,10 +220,10 @@
                 android:id="@+id/thursday_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:layout_marginTop="10dp"
-                app:layout_constraintStart_toStartOf="@+id/wednesday_layout"
-                app:layout_constraintTop_toBottomOf="@+id/wednesday_layout">
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@id/wednesday_layout"
+                app:layout_constraintTop_toBottomOf="@id/wednesday_layout">
 
                 <TextView
                     android:id="@+id/thursday"
@@ -215,8 +250,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:visibility="visible"
-                app:layout_constraintStart_toStartOf="@+id/thursday_layout"
-                app:layout_constraintTop_toBottomOf="@+id/thursday_layout">
+                app:layout_constraintStart_toStartOf="@id/thursday_layout"
+                app:layout_constraintTop_toBottomOf="@id/thursday_layout">
 
                 <TextView
                     android:id="@+id/friday"
@@ -224,15 +259,15 @@
                     android:layout_height="35dp"
                     android:background="@drawable/day_of_week"
                     android:gravity="center"
-                    android:text="금"
+                    android:text="@string/friday"
                     android:textColor="@color/blue" />
 
                 <TextView
                     android:id="@+id/friday_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:text="00:00 ~ 00:00"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/_00_00_00_00"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -242,73 +277,76 @@
                 android:layout_width="230dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/work_time_location_edit_btn_background"
+                android:gravity="center"
                 android:text="@string/set_work_time_location"
                 android:textColor="@color/blue"
                 android:textSize="16sp"
-                android:gravity="center"
-                android:background="@drawable/work_time_location_edit_btn_background"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/friday_layout"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/friday_layout" />
 
             <TextView
-                android:id="@+id/title_introduction_text"
+                android:id="@+id/title_introduction_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/active_time"
-                android:textSize="18sp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintStart_toStartOf="@+id/active_location_child"
-                app:layout_constraintTop_toBottomOf="@+id/edit_work_time_location_btn" />
+                android:text="@string/short_introduction"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/active_location_child"
+                app:layout_constraintTop_toBottomOf="@id/edit_work_time_location_btn" />
+
             <TextView
-                android:id="@+id/introduction_text"
+                android:id="@+id/introduction_edit_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_box"
-                android:text=""
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/active_location_child"
-                app:layout_constraintTop_toBottomOf="@+id/title_introduction_text"
-                />
+                android:layout_marginEnd="20dp"
+                android:text="@string/edit"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/title_introduction_text_view"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/introduction_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/gray_outlined_box"
+                android:padding="10dp"
+                android:text="@string/introduction_text"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/active_location_child"
+                app:layout_constraintTop_toBottomOf="@id/title_introduction_text_view" />
+
             <TextView
                 android:id="@+id/title_career_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="@string/career_infor"
                 android:textSize="18sp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintStart_toStartOf="@+id/introduction_text"
-                app:layout_constraintTop_toBottomOf="@+id/introduction_text" />
+                app:layout_constraintStart_toStartOf="@id/title_introduction_text_view"
+                app:layout_constraintTop_toBottomOf="@id/introduction_text_view" />
+
             <TextView
                 android:id="@+id/career_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_box"
-                android:text=""
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/title_career_text"
-                app:layout_constraintTop_toBottomOf="@+id/title_career_text"
-                />
-
-
-
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"
+                android:text="@string/career_example"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/title_career_text"
+                app:layout_constraintTop_toBottomOf="@id/title_career_text" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-    <TextView
-        android:id="@+id/next_btn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:background="@color/blue"
-        android:gravity="center"
-        android:text="@string/choose"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
