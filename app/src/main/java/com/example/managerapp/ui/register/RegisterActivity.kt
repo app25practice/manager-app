@@ -14,6 +14,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         navigateToCertificate()
+        navigateToRegisterStatus()
     }
 
     private fun navigateToCertificate() {
@@ -23,4 +24,10 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    private fun navigateToRegisterStatus() {
+        binding.goRegisterBtn.setOnClickListener {
+            val intent = Intent(this, RegisterStatusActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }
