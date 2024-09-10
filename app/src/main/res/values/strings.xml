@@ -211,7 +211,7 @@
     <string name="certificate_precaution_4">특수 효과나 편집 사진은 업로드 불가 대상입니다</string>
     <string name="register_status">등록 신청 현황</string>
     <string name="reviewing">현재 심사 중입니다</string>
-    <string name="reviewing_notice">심사 과정에서 약 3 ~ 7일일 소요됩니다</string>
+    <string name="reviewing_notice">심사 과정에서 약 3 ~ 7일 소요됩니다</string>
     <string name="input_manager_infor">매니저\n정보입력</string>
     <string name="reviewing_02">심사 중</string>
     <string name="register_complete">등록완료</string>
