@@ -1,8 +1,8 @@
 package com.example.managerapp.ui.status
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +12,7 @@ import java.util.Locale
 
 class ReservationApplyRecyclerViewAdapter(
     private val onItemAccepted: (ReservationInfo) -> Unit,
+    private val onItemRefused: (ReservationInfo, Long) -> Unit
 ) :
     ListAdapter<
             ReservationInfo,
@@ -22,8 +23,8 @@ class ReservationApplyRecyclerViewAdapter(
         fun bind(item: ReservationInfo) {
             val dateFormat = SimpleDateFormat("M월 d일 a h시", Locale.KOREAN)
 
-            binding.userNameTv.text = item.userInfo.name
-            binding.reservationDateTv.text = dateFormat.format(item.reservationDetails.date)
+            binding.userNameTextView.text = item.userInfo.name
+            binding.reservationDateTextView.text = dateFormat.format(item.reservationDetails.date)
 
             binding.acceptBtn.setOnClickListener {
                 onItemAccepted(item)
@@ -33,13 +34,14 @@ class ReservationApplyRecyclerViewAdapter(
             }
 
             binding.refuseBtn.setOnClickListener {
-                val reservationApplyList = currentList.toMutableList()
-                reservationApplyList.remove(item)
-                submitList(reservationApplyList)
+                onItemRefused(item, item.reservationDetails.reservationId)
             }
 
             binding.showDetailsBtn.setOnClickListener {
-                Toast.makeText(binding.root.context, "예약 정보 화면 이동", Toast.LENGTH_SHORT).show()
+                val intent =
+                    Intent(binding.root.context, ReservationDetailsActivity::class.java)
+                        .putExtra("ReservationInfo", item)
+                binding.root.context.startActivity(intent)
             }
         }
     }
@@ -48,7 +50,8 @@ class ReservationApplyRecyclerViewAdapter(
         parent: ViewGroup,
         viewType: Int,
     ): ReservationApplyViewHolder {
-        val binding = ItemReservationApplyBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemReservationApplyBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ReservationApplyViewHolder(binding)
     }
 
