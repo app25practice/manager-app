@@ -248,4 +248,43 @@
         <item>24:30</item>
     </string-array>
 
+    <string-array name="reservation_reject_option">
+        <item>예약 마감</item>
+        <item>환자 미응답</item>
+        <item>병원 미운영</item>
+        <item>기타</item>
+    </string-array>
+    <string name="complete_companion_task">동행업무를 완료하시겠습니까?</string>
+    <string name="prompt_write_report_info">리포트를 작성하여 진료 정보를\n알려주세요</string>
+    <string name="write_report">리포트 작성</string>
+    <string name="cancel">취소</string>
+    <string name="companion_start">동행시작</string>
+    <string name="companion_complete">동행완료</string>
+    <string name="complete_companion">동행 완료하기</string>
+    <string name="show_details">자세히 보기</string>
+    <string name="accept">수락하기</string>
+    <string name="refuse">거절하기</string>
+    <string name="reservation_apply">예약 신청</string>
+    <string name="reservation_reject">예약 거절</string>
+    <string name="reject_reservation">예약 거절하기</string>
+    <string name="reservation_information">예약 정보</string>
+    <string name="complete_history">완료 내역</string>
+    <string name="reject_reason">거절 사유(필수)</string>
+    <string name="reject_reason_details">거절 사유 상세</string>
+    <string name="input_specific_reason">구체적인 사유를 적어주세요</string>
+    <string name="service_start_time">이용 시작시간</string>
+    <string name="transportation">이용 시작시간</string>
+    <string name="request_details">요청사항</string>
+    <string name="user_information">이용자 정보</string>
+    <string name="birthday">생년월일</string>
+    <string name="payment_history">결제 내역</string>
+    <string name="payment_time">결제 시간</string>
+    <string name="payment_method">결제 수단</string>
+    <string name="cash_receipt">현금영수증</string>
+    <string name="companion_history">동행 내역</string>
+    <string name="status_patient_accompanying">환자 동행중</string>
+    <string name="input_companion_status">동행 상태를 입력해주세요</string>
+    <string name="input">입력</string>
+    <string name="output">출력</string>
+
 </resources>

@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/reservation_status_title_tv"
+        android:id="@+id/reservation_status_title_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reservation_status"
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="예약 신청"
+                android:text="@string/reservation_apply"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/reservation_status_recycler_view"
                 app:layout_constraintTop_toBottomOf="@id/reservation_status_recycler_view" />
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="완료 내역"
+                android:text="@string/complete_history"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/reservation_apply_recycler_view"
                 app:layout_constraintTop_toBottomOf="@id/reservation_apply_recycler_view" />
