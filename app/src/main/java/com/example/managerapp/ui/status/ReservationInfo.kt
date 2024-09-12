@@ -12,7 +12,7 @@ data class ReservationInfo(
 
 @Parcelize
 data class UserInfo(
-    val id: String,
+    val id: Long,
     val name: String,
     val gender: String,
     val birth: String,
@@ -21,9 +21,12 @@ data class UserInfo(
 
 @Parcelize
 data class ReservationDetails(
+    val reservationId: Long,
     val date: Date,
     val transportation: String,
-    val message: String
+    val message: String,
+    val departureLocation: String,
+    val arrivalLocation: String
 ) : Parcelable
 
 
