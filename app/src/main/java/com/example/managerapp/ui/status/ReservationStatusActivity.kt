@@ -10,7 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.managerapp.databinding.ActivityReservationStatusBinding
-import com.example.managerpracticeapp.ui.status.ReservationStatusRecyclerViewAdapter
+import com.example.managerapp.ui.status.adapter.CompanionCompleteHistoryRecyclerViewAdapter
+import com.example.managerapp.ui.status.adapter.ReservationApplyRecyclerViewAdapter
+import com.example.managerapp.ui.status.adapter.ReservationStatusRecyclerViewAdapter
+import com.example.managerapp.ui.status.data.Constraints
+import com.example.managerapp.ui.status.data.ReservationDetails
+import com.example.managerapp.ui.status.data.ReservationInfo
+import com.example.managerapp.ui.status.data.UserInfo
 import java.util.Date
 
 class ReservationStatusActivity : AppCompatActivity() {

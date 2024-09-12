@@ -1,4 +1,4 @@
-package com.example.managerapp.ui.status
+package com.example.managerapp.ui.status.data
 
 class Constraints {
     companion object {

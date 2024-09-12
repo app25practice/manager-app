@@ -1,4 +1,4 @@
-package com.example.managerpracticeapp.ui.status
+package com.example.managerapp.ui.status.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.managerapp.databinding.ItemReservationStatusBinding
 import com.example.managerapp.ui.status.CompanionCompleteDialog
 import com.example.managerapp.ui.status.ReservationDetailsActivity
-import com.example.managerapp.ui.status.ReservationInfo
+import com.example.managerapp.ui.status.data.ReservationInfo
 import java.text.SimpleDateFormat
 import java.util.Locale
 

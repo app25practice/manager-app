@@ -1,4 +1,4 @@
-package com.example.managerapp.ui.status
+package com.example.managerapp.ui.status.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

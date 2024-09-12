@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.managerapp.R
 import com.example.managerapp.databinding.ActivityReservationRejectBinding
+import com.example.managerapp.ui.status.data.Constraints
+import com.example.managerapp.ui.status.data.ReservationInfo
 import java.text.SimpleDateFormat
 import java.util.Locale
 

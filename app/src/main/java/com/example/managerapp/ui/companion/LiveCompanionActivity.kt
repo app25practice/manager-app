@@ -9,10 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.managerapp.R
 import com.example.managerapp.databinding.ActivityLiveCompanionBinding
 import com.example.managerapp.ui.status.CompanionCompleteDialog
-import com.example.managerapp.ui.status.ReservationApplyRecyclerViewAdapter
-import com.example.managerapp.ui.status.ReservationDetails
-import com.example.managerapp.ui.status.ReservationInfo
-import com.example.managerapp.ui.status.UserInfo
+import com.example.managerapp.ui.status.data.ReservationDetails
+import com.example.managerapp.ui.status.data.ReservationInfo
+import com.example.managerapp.ui.status.data.UserInfo
 import com.kakao.vectormap.KakaoMap
 import com.kakao.vectormap.KakaoMapReadyCallback
 import com.kakao.vectormap.LatLng

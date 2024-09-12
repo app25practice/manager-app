@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.managerapp.databinding.ActivityPaymentHistoryBinding
+import com.example.managerapp.ui.status.adapter.CompanionHistoryRecyclerViewAdapter
+import com.example.managerapp.ui.status.data.PaymentInfo
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

@@ -1,4 +1,4 @@
-package com.example.managerapp.ui.status
+package com.example.managerapp.ui.status.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

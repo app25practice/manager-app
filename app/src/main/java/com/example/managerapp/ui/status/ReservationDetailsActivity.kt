@@ -3,6 +3,7 @@ package com.example.managerapp.ui.status
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.managerapp.databinding.ActivityReservationDetailsBinding
+import com.example.managerapp.ui.status.data.ReservationInfo
 import java.text.SimpleDateFormat
 import java.util.Locale
 

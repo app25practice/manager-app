@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Toast
 import com.example.managerapp.databinding.ViewCompanionCompleteDialogBinding
+import com.example.managerapp.ui.status.data.ReservationInfo
 
 class CompanionCompleteDialog(context: Context, reservationInfo: ReservationInfo) :
     Dialog(context) {
