@@ -4,11 +4,12 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.managerapp.databinding.ItemReservationStatusBinding
+import com.example.managerapp.ui.status.CompanionCompleteDialog
+import com.example.managerapp.ui.status.ReservationDetailsActivity
 import com.example.managerapp.ui.status.ReservationInfo
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -28,15 +29,19 @@ class ReservationStatusRecyclerViewAdapter :
 
             binding.companionStartBtn.setOnClickListener {
                 binding.companionStartBtn.visibility = View.GONE
-                binding.companionDoneBtn.visibility = View.VISIBLE
+                binding.companionCompleteBtn.visibility = View.VISIBLE
             }
 
-            binding.companionDoneBtn.setOnClickListener {
-                Toast.makeText(binding.root.context, "리포트 작성 다이얼로그 이동", Toast.LENGTH_SHORT).show()
+            binding.companionCompleteBtn.setOnClickListener {
+                val companionCompleteDialog = CompanionCompleteDialog(binding.root.context, item)
+                companionCompleteDialog.show()
             }
 
             binding.showDetailsBtn.setOnClickListener {
-                Toast.makeText(binding.root.context, "예약 정보 화면 이동", Toast.LENGTH_SHORT).show()
+                val intent =
+                    Intent(binding.root.context, ReservationDetailsActivity::class.java)
+                        .putExtra("ReservationInfo", item)
+                binding.root.context.startActivity(intent)
             }
         }
     }
@@ -45,7 +50,8 @@ class ReservationStatusRecyclerViewAdapter :
         parent: ViewGroup,
         viewType: Int,
     ): ReservationStatusViewHolder {
-        val binding = ItemReservationStatusBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemReservationStatusBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ReservationStatusViewHolder(binding)
     }
 
@@ -62,14 +68,14 @@ class ReservationStatusRecyclerViewAdapter :
             oldItem: ReservationInfo,
             newItem: ReservationInfo,
         ): Boolean {
-            return oldItem.userInfo.id == newItem.userInfo.id
+            return oldItem.reservationDetails.reservationId == newItem.reservationDetails.reservationId
         }
 
         override fun areContentsTheSame(
             oldItem: ReservationInfo,
             newItem: ReservationInfo,
         ): Boolean {
-            return oldItem.userInfo.name == newItem.userInfo.name &&
+            return oldItem.userInfo.id == newItem.userInfo.id &&
                     oldItem.reservationDetails.date == newItem.reservationDetails.date
         }
     }
