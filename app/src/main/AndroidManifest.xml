@@ -37,10 +37,19 @@
             android:name=".ui.PreferWorkTimeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.PreferWorkLocationActivity"
+            android:name=".ui.register.RegisterStatusActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.EditManagerInforActivity"
+            android:name=".ui.register.CertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.EditWorkTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.EditWorkLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.EditManagerInforActivity"
             android:exported="false" />
         <activity
             android:name=".ui.ReportCheckActivity"
